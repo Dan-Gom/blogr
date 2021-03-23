@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --light-red: hsl(356, 100%, 66%);
+    --very-light-red: hsl(365, 100%, 74%);
+    --very-dark-blue: hsl(208, 49%, 24%);
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    background-color: rgb(250, 250, 250);
+}
+header{
+    overflow: hidden;
+    border-bottom-left-radius: 5em;
+}
+header, #intro{
+    position: relative;
+}
+#bg{
+    background-image: url('../images/bg-pattern-intro.svg');
+    background-size: 155em;
+    background-position-y: -65em;
+    background-position-x: -25em;
+    background-repeat: no-repeat;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#background{
+    background: linear-gradient(to bottom right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+nav{
+    z-index: 100;
+    position: relative;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav > ul >li{
+    display: flex;
+    padding: 1em 5em;
+    align-items: baseline;
+}
+li > *, li>div>*{
+    margin: 1em;
+    text-decoration: none;
+    color: white;
+}
+#bg-logo{
+    font-size: 2em;
+}
+.f-ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+.f-overpass{
+    font-family: 'Overpass', sans-serif;
+}
+#header--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+}
+#header--container > *{
+    font-family: 'Overpass';
+    color:white;
+}
+#header--container > h1{
+    font-size: 3.5em;
+}
+#header--container > h2{
+    font-weight: 100;
+    margin-bottom: 3em;
+}
+button{
+    padding: 0.6em;
+    border: none;
+    border-radius: 1em;
+    margin: 0.5em;
+    cursor: pointer;
+    font-family: 'Ubuntu';
+}
+.button-primary{
+    background-color: var(--very-light-red);
+    color: white;
+}
+.button-secondary{
+    background-color: white;
+    color: var(--very-light-red);
+}
+#background--intro{
+    background-color: rgb(250, 250, 250);
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    color:var(--Very-dark-black-blue);
+}
+#bg-im-intro{
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-position-x: 43em;
+    background-position-y: 3em;
+}
