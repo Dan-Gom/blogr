@@ -22,8 +22,11 @@ header{
     overflow: hidden;
     border-bottom-left-radius: 5em;
 }
-header, #intro{
+header, #intro, #second, #third, footer{
     position: relative;
+}
+.topNav .icon{
+    display: none;
 }
 #bg{
     background-image: url('../images/bg-pattern-intro.svg');
@@ -45,6 +48,36 @@ header, #intro{
     right: 0;
     top: 0;
 }
+#intro-txt-1, #intro-txt-2{
+    width: 40%; padding-left: 6em;
+}
+#intro-txt-2{
+    padding-bottom: 8em;
+}
+#second-txt-1, #second-txt-2{
+    width: 40%;
+}
+#second-txt-1{
+    padding: 7em 7em 0em;
+}
+#second-txt-2{
+    padding: 1.5em 7em 10.5em;
+}
+#third-txt-1, #third-txt-2, #thir-txt-3,#thir-txt-4{
+    width: 40%;
+}
+#third-txt-1{
+    padding: 23em 7em 0em;
+}
+#third-txt-2{
+    padding: 1.5em 7em;
+}
+#thir-txt-3{
+    padding: 6em 7em 0em;
+}
+#thir-txt-4{
+    padding: 1.5em 7em 10.5em;
+}
 nav{
     z-index: 100;
     position: relative;
@@ -56,7 +89,7 @@ nav > ul{
 }
 nav > ul >li{
     display: flex;
-    padding: 1em 5em;
+    padding: 1em 0em;
     align-items: baseline;
 }
 li > *, li>div>*{
@@ -91,9 +124,9 @@ li > *, li>div>*{
     margin-bottom: 3em;
 }
 button{
-    padding: 0.6em;
+    padding: 0.8em;
     border: none;
-    border-radius: 1em;
+    border-radius: 1.5em;
     margin: 0.5em;
     cursor: pointer;
     font-family: 'Ubuntu';
@@ -106,9 +139,9 @@ button{
     background-color: white;
     color: var(--very-light-red);
 }
-#background--intro{
+#background--intro, #background--third{
     background-color: rgb(250, 250, 250);
-    z-index: -2;
+    z-index: -3;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -130,4 +163,84 @@ button{
     z-index: -2;
     background-position-x: 43em;
     background-position-y: 3em;
+}
+#second, #third{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+#background--second{
+    background-color: var(--Very-dark-black-blue);
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+#bg-im-second, #bg-im-second-circles, #bg-im-third-circles{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+}
+#bg-im-second{
+    background-image: url(../images/illustration-phones.svg);
+    width: 552px;
+    height: 552px;
+    position: absolute;
+    right: 0;
+    top: -4.5em;
+    left: 5em;
+}
+#bg-im-second-circles{
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-position-x: -14em;
+    background-position-y: -30em
+}
+#third{
+    color: var(--Very-dark-black-blue);
+}
+#bg-im-third-circles{
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-position-x: -17em;
+    background-position-y: 10em;
+}
+#background--footer{
+    background: var(--Very-dark-black-blue);
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    padding: 2em;
+    overflow: hidden;
+    border-top-right-radius: 5em;
+}
+footer > div {
+    display: flex;
+    flex-direction: column;
+}
+footer > div > a{
+    font-family: 'Overpass';
+    font-size: 0.8em;
+    padding-top: 0.5em;
+}
+footer > div >h2{
+    padding-bottom: 1em;
 }
